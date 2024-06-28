@@ -1,0 +1,195 @@
+
+.main-header
+{
+width: 100%;
+min-height: 60px;
+}
+.main-header .logo
+{
+    
+    background-color: royalblue;
+}
+.logo h2
+{
+    color: white;
+    padding: 5px;
+}
+.main-header .menu
+{
+    
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+}
+.menu ul
+{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.menu ul li
+{
+    display: inline-block;
+    padding-top: 15px;
+}
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+
+}
+.slider
+{
+    width: 100%;
+}
+.slider img
+{
+    /* width: 100%; */
+    height: auto;
+    margin-top: 3px;
+}
+.main-con
+{
+    width: 100%;
+    min-height: 400px;
+
+}
+.main-con .sidebar
+{
+    background:#524C42 repeat-y;
+    height: 240px;
+}
+.sidebar p{
+    color: white;
+}
+.main-con .con{
+    background-color: lightgrey;
+
+}
+.con .que h3{
+    padding: 10px;
+}
+.con .ans p{
+    padding: 10px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.prod img
+{
+    position: relative;
+    width: 100%;
+}
+.prod .order a
+{
+    position: absolute;
+    z-index: 1;
+    margin-left: 87px;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 7px 10px;
+    width: 100px;
+    height: 40px;
+    background-color: royalblue;
+    color: white;
+    margin-top: 5px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    animation-name: anni2;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.prod .offer h4
+{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    margin-top: 155px;
+    margin-left: 5px;
+    animation-name: anni;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -ms-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+}
+
+@keyframes anni{
+    30%
+    {
+        color: crimson;
+        transform:translateY(-10px);
+        -webkit-transform:translateY(-10px);
+        -moz-transform:translateY(-10px);
+        -ms-transform:translateY(-10px);
+        -o-transform:translateY(-10px);
+}
+    50%
+    {
+        color: green;
+
+    }
+    80%
+    {
+        color: orange;
+    }
+    100%
+    {
+        color: royalblue;
+    }
+}
+@keyframes anni2{
+    10%{
+
+        background-color: orange;
+        color: white;
+    }
+    30%
+    {
+        background-color: purple;
+        color: white;
+    }
+    50%
+    {
+        background-color: black;
+        color: white;
+
+    }
+    80%
+    {
+        background-color: royalblue;
+        color: white;
+    }
+    100%
+    {
+        background-color: brown;
+        color: white;
+    }
+}
+
+@media only screen and (max-width:768px)
+{
+    .menu ul{
+        padding: 0; 
+        flex-direction: column;
+
+    };
+    .container
+    {
+        width: 100%;
+    }
+    .prod img{
+        margin-top: 5px;
+    }
+    
+}
+
